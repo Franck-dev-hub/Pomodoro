@@ -1,2 +1,7 @@
 # Jetbrains ignores
 .idea/
+
+# Python build
+build/
+dist/
+Compile.bat

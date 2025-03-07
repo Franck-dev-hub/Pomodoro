@@ -83,36 +83,74 @@ def validate_input_input(P):
 root = tk.Tk()
 root.title("Pomodoro Timer")
 root.geometry("400x400")
-root.config(bg="#FF6347")  # Fond orange moderne
+root.config(bg="#FF6347")
+
+# Icône de l'application
+root.iconbitmap("icon.ico")
 
 # Style de la police et du texte
 font_style = ("Helvetica", 14)
 
 # Label du temps restant
-time_label = tk.Label(root, text="Pomodoro Timer", font=("Helvetica", 20, "bold"), bg="#FF6347", fg="white")
+time_label = tk.Label(root,
+                      text="Pomodoro Timer",
+                      font=("Helvetica", 20, "bold"),
+                      bg="#FF6347",
+                      fg="white")
 time_label.pack(pady=20)
 
 # Entrées pour la configuration du temps de travail et de pause
 settings_frame = tk.Frame(root, bg="#FF6347")
 settings_frame.pack(pady=10)
 
-tk.Label(settings_frame, text="Temps de travail (heures):", font=font_style, bg="#FF6347", fg="white").grid(row=0, column=0, padx=10, pady=5)
-work_hours_entry = tk.Entry(settings_frame, font=font_style, width=5, validate="key", validatecommand=(root.register(validate_input_input), "%P"))
+tk.Label(settings_frame,
+         text="Temps de travail (heures):",
+         font=font_style,
+         bg="#FF6347",
+         fg="white").grid(row=0, column=0, padx=10, pady=5)
+work_hours_entry = tk.Entry(settings_frame,
+                            font=font_style,
+                            width=5,
+                            validate="key",
+                            validatecommand=(root.register(validate_input_input), "%P"))
 work_hours_entry.insert(0, "1")
 work_hours_entry.grid(row=0, column=1, padx=10, pady=5)
 
-tk.Label(settings_frame, text="Temps de travail (minutes):", font=font_style, bg="#FF6347", fg="white").grid(row=1, column=0, padx=10, pady=5)
-work_minutes_entry = tk.Entry(settings_frame, font=font_style, width=5, validate="key", validatecommand=(root.register(validate_input_input), "%P"))
+tk.Label(settings_frame,
+         text="Temps de travail (minutes):",
+         font=font_style,
+         bg="#FF6347",
+         fg="white").grid(row=1, column=0, padx=10, pady=5)
+work_minutes_entry = tk.Entry(settings_frame,
+                              font=font_style,
+                              width=5,
+                              validate="key",
+                              validatecommand=(root.register(validate_input_input), "%P"))
 work_minutes_entry.insert(0, "0")
 work_minutes_entry.grid(row=1, column=1, padx=10, pady=5)
 
-tk.Label(settings_frame, text="Temps de pause (heures):", font=font_style, bg="#FF6347", fg="white").grid(row=2, column=0, padx=10, pady=5)
-break_hours_entry = tk.Entry(settings_frame, font=font_style, width=5, validate="key", validatecommand=(root.register(validate_input_input), "%P"))
+tk.Label(settings_frame, text="Temps de pause (heures):",
+         font=font_style,
+         bg="#FF6347",
+         fg="white").grid(row=2, column=0, padx=10, pady=5)
+break_hours_entry = tk.Entry(settings_frame,
+                             font=font_style,
+                             width=5,
+                             validate="key",
+                             validatecommand=(root.register(validate_input_input), "%P"))
 break_hours_entry.insert(0, "0")
 break_hours_entry.grid(row=2, column=1, padx=10, pady=5)
 
-tk.Label(settings_frame, text="Temps de pause (minutes):", font=font_style, bg="#FF6347", fg="white").grid(row=3, column=0, padx=10, pady=5)
-break_minutes_entry = tk.Entry(settings_frame, font=font_style, width=5, validate="key", validatecommand=(root.register(validate_input_input), "%P"))
+tk.Label(settings_frame,
+         text="Temps de pause (minutes):",
+         font=font_style,
+         bg="#FF6347",
+         fg="white").grid(row=3, column=0, padx=10, pady=5)
+break_minutes_entry = tk.Entry(settings_frame,
+                               font=font_style,
+                               width=5,
+                               validate="key",
+                               validatecommand=(root.register(validate_input_input), "%P"))
 break_minutes_entry.insert(0, "5")
 break_minutes_entry.grid(row=3, column=1, padx=10, pady=5)
 
@@ -120,10 +158,24 @@ break_minutes_entry.grid(row=3, column=1, padx=10, pady=5)
 button_frame = tk.Frame(root, bg="#FF6347")
 button_frame.pack(pady=20)
 
-start_button = tk.Button(button_frame, text="Démarrer", command=start_timer, font=("Helvetica", 16), bg="#28a745", fg="white", relief="raised", bd=5)
+start_button = tk.Button(button_frame,
+                         text="Démarrer",
+                         command=start_timer,
+                         font=("Helvetica", 16),
+                         bg="#28a745",
+                         fg="white",
+                         relief="raised",
+                         bd=5)
 start_button.grid(row=0, column=0, padx=10, pady=5)
 
-apply_button = tk.Button(button_frame, text="Appliquer", command=apply_settings, font=("Helvetica", 16), bg="#007bff", fg="white", relief="raised", bd=5)
+apply_button = tk.Button(button_frame,
+                         text="Appliquer",
+                         command=apply_settings,
+                         font=("Helvetica", 16),
+                         bg="#007bff",
+                         fg="white",
+                         relief="raised",
+                         bd=5)
 apply_button.grid(row=0, column=1, padx=10, pady=5)
 
 update_time_display()
