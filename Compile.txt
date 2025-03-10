@@ -1,0 +1,2 @@
+conda activate python3.13.1
+pyinstaller -w -F --clean -n Pomodoro -i=icon.ico main.py

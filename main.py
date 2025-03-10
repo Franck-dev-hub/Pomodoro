@@ -85,9 +85,6 @@ root.title("Pomodoro Timer")
 root.geometry("400x400")
 root.config(bg="#FF6347")
 
-# Icône de l'application
-root.iconbitmap("icon.ico")
-
 # Style de la police et du texte
 font_style = ("Helvetica", 14)
 
