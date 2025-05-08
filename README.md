@@ -1,4 +1,4 @@
-# Pomodor timer
+# Pomodoro timer
 A simple and customizable Pomodoro timer application to help you manage your time effectively.
 
 ## Description
@@ -39,7 +39,7 @@ Franck S. - Initial development and design.
 - 1.2.0
     - Add pause/resume buttons
     - Add json settings file
-    - Replaced golbal variables with a 'settings' class
+    - Replaced global variables with a 'settings' class
     - Enhanced code readability and flexibility
     - Add version
 - 1.1.1
