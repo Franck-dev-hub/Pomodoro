@@ -5,14 +5,14 @@ The Pomodoro Timer is a productivity tool based on the Pomodoro Technique. It al
 
 ## 🚀 Getting Started
 ### ✅ Prerequisites
-- Python 3.13 or higher
+- `Python 3.13` or higher
 - Required Python libraries (see `requirements.txt`):
 - Tested on Windows.
 
 ### 📥 Installation and run
 1. Clone the repository
-2. Create and activate a virtual environment (I advise using uv)
-3. Install dependencies
+2. Create and activate a virtual environment (I advise using `uv`)
+3. Install dependencies (you can use `requirements.txt`)
 4. Run the application (you can use the provided `run.bat` file)
 5. Use the graphical interface to configure work and break intervals, start the timer, and manage your sessions.
 
@@ -29,7 +29,7 @@ If you encounter issues, ensure:
 - For additional help, refer to the source code or contact the authors.
 
 ## 👥 Authors
-Franck S. - Initial development and design.
+- Franck-dev-hub - Franck S. - Initial development and design.
 
 ## 📝 Version History
 - **v1.3.0**:
