@@ -5,9 +5,9 @@ The Pomodoro Timer is a productivity tool based on the Pomodoro Technique. It al
 
 ## 🚀 Getting Started
 ### ✅ Prerequisites
-* Python 3.13 or higher
-* Required Python libraries (see `requirements.txt`):
-* Tested on Windows.
+- Python 3.13 or higher
+- Required Python libraries (see `requirements.txt`):
+- Tested on Windows.
 
 ### 📥 Installation and run
 1. Clone the repository
@@ -51,7 +51,7 @@ Franck S. - Initial development and design.
     - Initial Release
 
 ## 📜 License
-This project is licensed under MIT Licence - see the LICENSE.txt file for details.
+- This project is licensed under MIT Licence - see the LICENSE.txt file for details.
 
 ## 💖 Acknowledgments
 - Inspired by the Pomodoro Technique.
