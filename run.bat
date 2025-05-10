@@ -1,7 +1,7 @@
 @echo off
-:: Active l'environnement virtuel s'il existe
+:: Active lenvironnement virtuel si il existe
 if exist .venv\Scripts\activate (
-    call .venv\Scripts\activate
+	call .venv\Scripts\activate
 )
 
 :: Lance le script Python
